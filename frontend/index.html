@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent1">
+        <div id="filter">
+            
+            City type: <select id="select">
+                <option value="metro">Metro</option>
+                <option value="town">Town</option>
+                <option value="vilage">Village</option>
+            </select>
+            <button onclick="filterData()">Apply Filter</button>
+            <input type="text" placeholder="Search..." style="margin-left: 150px; height: 30px;" id="inputSearch"> <button onclick="search()">Search</button>
+        </div>
+        <table id="data">
+            <tr>
+                <th>City/Town/Village <div style="cursor: pointer;"></div> </th>
+                <th>District<div style="cursor: pointer;"></div> </th>
+                <th>Population  <span style="cursor: pointer; border: 0.5px solid rgb(209, 205, 205);margin-left: 30px; padding: 5px;" onclick="sortData('population')">↑↓</span> </th>
+                <th>Number of Polling Stations  <span style="cursor: pointer; border: 0.5px solid rgb(209, 205, 205);margin-left: 30px; padding: 5px;" onclick="sortData('polling')">↑↓</span> </th>
+                <th>Type (Metro/Town/Village) </th>
+            </tr>
+            <tbody id="data1">
+
+            </tbody>
+           
+        </table>
+        <div id="pages">
+        <button id="prev" onclick="fetchPrevious()" style="border-radius: 50%; border: 0.5px solid rgb(25, 100, 75); color:rgb(25, 100, 75); background-color:rgb(183, 228, 213) ;"> << </button>
+        <button id="currentPage" style="border-radius: 2px; border: 0.5px solid rgb(25, 100, 75); color:rgb(25, 100, 75); background-color:rgb(183, 228, 213) ;">page 2</button>
+        <button onclick="fetchNext()" id="next" style="border-radius: 50%; border: 0.5px solid rgb(25, 100, 75); color:rgb(25, 100, 75); background-color:rgb(183, 228, 213) ;"> >> </button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

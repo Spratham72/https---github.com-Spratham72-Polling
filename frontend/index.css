@@ -1,0 +1,54 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#filter{
+    border: 0.5px solid rgb(223, 217, 217);
+   width: 100%;
+   padding: 20px;
+    
+}
+#filter>*{
+    margin: 10px;
+}
+#filter>select{
+    width: 150px;
+    height: 30px;
+}
+#filter>button{
+    height: 30px;
+    background-color: rgb(183, 228, 213);
+    border: 1px solid rgb(25, 100, 75);
+    border-radius: 2px;
+    color: rgb(25, 100, 75);
+    cursor: pointer;
+}
+#parent1{
+    margin: 5%;
+    margin-right: 8%;
+}
+#data{
+    margin-top: 4%;
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    gap: 20px;
+  }
+  th{
+      text-align: center;
+      border-bottom:3px double green;
+      width: 120px;
+  }
+  #pages >*{
+      margin: 20px;
+      text-align: center;
+     padding: 8px;
+     cursor: pointer;
+     
+  }
+  #pages{
+      text-align: center;
+  }

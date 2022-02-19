@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Login:
+    <input type="text" placeholder="username" id="username">
+    <input type="text" placeholder="role" id="role">
+    <button onclick="submit()">Submit</button>
+</body>
+<script>
+    function submit(){
+        var obj={role:document.getElementById("role").value}
+        localStorage.setItem("user",JSON.stringify(obj));
+        window.location.href='index.html';
+    }
+    
+</script>
+</html>
